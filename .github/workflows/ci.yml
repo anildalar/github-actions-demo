@@ -15,5 +15,6 @@ jobs:
       - name: Run simple commands
         run: |
           echo "Hello from GitHub Actions"
+          cat /etc/os-release
           ls -la
           date
