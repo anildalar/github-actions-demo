@@ -11,9 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Run simple commands
-        run: |
+      - run: hostname
+      - run: whoami
+      - run: hostname -I
+      - run: |
           echo "Hello from GitHub Actions"
           node --version
           npm --version
